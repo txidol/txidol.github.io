@@ -1,0 +1,51 @@
+body, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+	font-family: Microsoft YaHei, '宋体', Tahoma, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+body {
+	padding-top: 70px;
+}
+
+section {
+	padding-top: 70px;
+	margin-top: -70px;
+}
+
+footer {
+	padding-top: 40px;
+	padding-bottom: 30px;
+	margin-top: 30px;
+	color: #777;
+	text-align: center;
+	border-top: 1px solid #e5e5e5;
+}
+
+.page-header, .page-header > h1, .page-header > h2, .page-header > h3, .page-header > h4, .page-header > h5, .page-header > h6 {
+	margin-top: 0px;
+}
+
+.panel-heading > h1, .panel-heading > h2, .panel-heading > h3, .panel-heading > h4, .panel-heading > h5, .panel-heading > h6 {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
+.panel-body > ul {
+	list-style: square;
+	padding-left: 18px;
+	line-height: 30px;
+}
+
+.panel > .ds-recent-comments {
+	padding: 5px 5px 0px 5px;
+	margin-bottom: 0px;
+}
+
+.panel > .ds-recent-visitors {
+	margin-bottom: 0px;
+	padding: 5px;
+}

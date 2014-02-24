@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<div class="row">
+    <div class="col-md-9" role="main">
+        <div class="page-header">
+            <h1>{{ page.title }}</h1>
+            <small>
+	        	创建于：{{ page.date | date: "%Y-%m-%d" }}
+	        	|
+	        	分类：
+	        	{% for category in page.categories %}
+	            <a href="{{ site.ctx }}/categories#{{ category }}">{{ category }}</a>&nbsp;
+	            {% endfor %}
+	            |
+	        	标签：
+	        	{% for tag in page.tags %}
+	            <a href="{{ site.ctx }}/tags#{{ tag }}">{{ tag }}</a>&nbsp;
+	            {% endfor %}
+	        </small>
+        </div>
+        {{ content }}
+        <ul class="pager">
+            {% if page.previous %}
+            <li class="previous"><a href="{{ site.ctx }}{{ page.previous.url }}">&laquo;&nbsp;{{ page.previous.title | truncatewords:5 }}</a></li>
+            {% endif %}
+            {% if page.next %}
+            <li class="next"><a href="{{ site.ctx }}{{ page.next.url }}">{{ page.next.title | truncatewords:5 }}&nbsp;&raquo;</a></li>
+            {% endif %}
+        </ul>
+    </div>
+    <div class="col-md-3">
+    	<div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">相关文档</h3>
+            </div>
+            <div class="list-group">
+            	{% for post in site.related_posts limit:10 %}
+	            <a href="{{ site.ctx }}{{ post.url }}" class="list-group-item">{{ post.title }}</a>
+	            {% endfor %}
+	        </div>
+        </div>
+    </div>
+</div>
