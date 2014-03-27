@@ -6,8 +6,8 @@ paginate:           6
 lsi:                true
 
 name:               Doc
-url:                http://txidol.github.io
+url:                http://jnoee.github.io
 ctx:                /doc
 description:        这是一个利用 Github + Jekyll + BootStrap 搭建起来的文档博客。
 keywords:           文档, Blog, 博客, Github, Jekyll, BootStrap, Liquid
-author:             txidol
+author:             Jnoee
