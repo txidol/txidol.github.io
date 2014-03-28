@@ -6,7 +6,9 @@ title: Java初级码农
 <div class="row">
     <div class="col-md-100" role="main">
         {% for post in paginator.posts %}
-        <div class="panel panel-default">
+		1{{post.categories[0]}}
+        {%if post.categories[0] == "Java初级码农" %}
+		<div class="panel panel-default">
             <div class="panel-heading">
                 <h4>
                     <a href="{{ site.ctx }}{{ post.url }}">{{ post.title }}</a>
@@ -29,6 +31,7 @@ title: Java初级码农
                 </small>
             </div>
         </div>
+		{% endif %}
         {% endfor %}
     </div>
    
