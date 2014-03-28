@@ -12,8 +12,7 @@ title: Java初级码农
             </div>
             <ul class="nav nav-pills nav-stacked">
                 {% for category in site.categories %}
-                {{ category[0] }}
-                {% if category[0] == "Java初级码农" %}
+                {% if category[0] == "java初级码农" %}
                 <li>
                     <a href="{{ site.ctx }}/categories#{{ category[0] }}">
                         <span class="badge pull-right">{{ category[1].size }}</span>
