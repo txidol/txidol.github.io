@@ -12,12 +12,14 @@ title: Java初级码农
             </div>
             <ul class="nav nav-pills nav-stacked">
                 {% for category in site.categories %}
+                {% if category[0] == "开发规范" %}
                 <li>
                     <a href="{{ site.ctx }}/categories#{{ category[0] }}">
                         <span class="badge pull-right">{{ category[1].size }}</span>
                         <i class="fa fa-list"></i>&nbsp;{{ category[0] }}
                     </a>
                 </li>
+                {% endif %}
                 {% endfor %}
             </ul>
         </div>
