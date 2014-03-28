@@ -25,23 +25,4 @@ title: Java初级码农
         {% endif %}
         {% endfor %}
     </div>
-    <div class="col-md-3">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">文档分类</h3>
-            </div>
-            <ul class="nav nav-pills nav-stacked">
-                {% for category in site.categories %}
-                {% if category[0] == "java初级码农" %}
-                <li>
-                    <a href="{{ site.ctx }}/java_base#{{ category[0] }}">
-                        <span class="badge pull-right">{{ category[1].size }}</span>
-                        <i class="fa fa-list"></i>&nbsp;{{ category[0] }}
-                    </a>
-                </li>
-                {% endif %}
-                {% endfor %}
-            </ul>
-        </div>
-    </div>
 </div>
