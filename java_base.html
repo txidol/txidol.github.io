@@ -4,7 +4,30 @@ navId: base
 title: Java初级码农
 ---
 <div class="row">
-    
+    <div class="col-md-9" role="main">
+        <div class="page-header">
+            <h1>{{ page.title }}</h1>
+        </div>
+        {% for category in site.categories %}
+        <section id="{{ category[0] }}">
+	        <div class="panel panel-default">
+	            <div class="panel-heading">
+	                <h4>{{ category[0] }}</h4>
+	            </div>
+	            <div class="panel-body">
+	                <ul>
+	                    {% for post in category[1] %}
+	                    <li>
+	                        {{ post.date | date:"%Y-%m-%d" }} --- 
+	                        <a href="{{ site.ctx }}{{ post.url }}">{{ post.title }}</a>
+	                    </li>
+	                    {% endfor %}
+	                </ul>
+	            </div>
+	        </div>
+        </section>
+        {% endfor %}
+    </div>
     <div class="col-md-3">
         <div class="panel panel-default">
             <div class="panel-heading">
@@ -14,7 +37,7 @@ title: Java初级码农
                 {% for category in site.categories %}
                 {% if category[0] == "java初级码农" %}
                 <li>
-                    <a href="{{ site.ctx }}/categories#{{ category[0] }}">
+                    <a href="{{ site.ctx }}/java_base#{{ category[0] }}">
                         <span class="badge pull-right">{{ category[1].size }}</span>
                         <i class="fa fa-list"></i>&nbsp;{{ category[0] }}
                     </a>
