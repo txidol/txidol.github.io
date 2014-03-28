@@ -7,7 +7,7 @@ lsi:                true
 
 name:               Txidol 's Blog
 url:                http://txidol.github.io
-ctx:                /blog
+ctx:                /
 description:        这是一个利用 Github + Jekyll + BootStrap 搭建起来的文档博客。
 keywords:           文档, Blog, 博客, Github, Jekyll, BootStrap, Liquid
 author:             txidol
