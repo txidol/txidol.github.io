@@ -31,6 +31,11 @@
                         <i class="fa fa-refresh fa-spin"></i>&nbsp;重构
                     </a>
                 </li>
+				<li {% if page.navId == "db_base" %} class="active"{% endif %}>
+                    <a href="{{ site.ctx }}/blog/db/base">
+                        <i class="fa fa-cloud"></i>&nbsp;数据库小虫
+                    </a>
+                </li>
 				<li{% if page.navId == "tags" %} class="active"{% endif %}>
                     <a href="{{ site.ctx }}/tags">
                         <i class="fa fa-tags"></i>&nbsp;标签
