@@ -20,20 +20,20 @@
                     <a href="{{ site.ctx }}/categories">
                         <i class="fa fa-th-list"></i>&nbsp;分类
                     </a>
-                </li>
-                <li{% if page.navId == "tags" %} class="active"{% endif %}>
-                    <a href="{{ site.ctx }}/tags">
-                        <i class="fa fa-tags"></i>&nbsp;标签
+                </li
+				<li {% if page.navId == "base" %} class="active"{% endif %}>
+                    <a href="{{ site.ctx }}/blog/java/base">
+                        <i class="fa fa-location-arrow"></i>&nbsp;Java初级码农
                     </a>
-                </li>
+                </li>				
                 <li>
-                    <a href="/goto/java/refactoring">
+                    <a href="{{ site.ctx }}/blog/java/refactoring">
                         <i class="fa fa-refresh fa-spin"></i>&nbsp;重构
                     </a>
                 </li>
-				<li {% if page.navId == "base" %} class="active"{% endif %}>
-                    <a href="{{ site.ctx }}/java_base">
-                        <i class="fa fa-location-arrow"></i>&nbsp;Java初级码农
+				<li{% if page.navId == "tags" %} class="active"{% endif %}>
+                    <a href="{{ site.ctx }}/tags">
+                        <i class="fa fa-tags"></i>&nbsp;标签
                     </a>
                 </li>
                 <li{% if page.navId == "about" %} class="active"{% endif %}>
