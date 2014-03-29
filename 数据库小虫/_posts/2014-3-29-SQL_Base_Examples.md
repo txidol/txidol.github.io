@@ -17,6 +17,7 @@ SELECT 语句用于从数据库中选取数据。
 与
 
 	SELECT * FROM table_name;
+
 	
 SELECT DISTINCT 语句
 --------------------
@@ -29,6 +30,7 @@ SELECT DISTINCT 语句
 	SELECT DISTINCT column_name,column_name
 	FROM table_name;
 
+	
 WHERE 子句
 ----------
 WHERE 子句用于提取那些满足指定标准的记录。
@@ -39,6 +41,7 @@ WHERE 子句用于提取那些满足指定标准的记录。
 	FROM table_name
 	WHERE column_name operator value;
 
+	
 AND & OR 运算符
 ---------------
 AND & OR 运算符用于基于一个以上的条件对记录进行过滤。
@@ -59,6 +62,7 @@ AND & OR 运算符用于基于一个以上的条件对记录进行过滤。
 	SELECT * FROM Customers
 	WHERE Country='Germany'
 	AND (City='Berlin' OR City='München');
+
 	
 ORDER BY 关键字
 ---------------
@@ -71,6 +75,7 @@ ORDER BY 关键字默认按照升序对记录进行排序。如果需要按照�
 	SELECT column_name,column_name
 	FROM table_name
 	ORDER BY column_name,column_name ASC|DESC;
+
 	
 INSERT INTO 语句
 ----------------
@@ -88,9 +93,10 @@ INSERT INTO 语句可以有两种编写形式。
 
 	INSERT INTO table_name (column1,column2,column3,...)
 	VALUES (value1,value2,value3,...);
+
 	
-SQL UPDATE 语句
----------------
+UPDATE 语句
+-----------
 UPDATE 语句用于更新表中已存在的记录。
 
 ### UPDATE 语法
@@ -101,6 +107,7 @@ UPDATE 语句用于更新表中已存在的记录。
 
 <i class="fa fa-warning"></i>请注意 SQL UPDATE 语句中的 WHERE 子句！
 WHERE 子句规定哪条记录或者哪些记录需要更新。如果您省略了 WHERE 子句，所有的记录都将被更新！
+
 
 DELETE 语句
 -----------
