@@ -18,6 +18,7 @@ SELECT 语句用于从数据库中选取数据。
 
 	SELECT * FROM table_name;
 
+---
 	
 SELECT DISTINCT 语句
 --------------------
@@ -30,6 +31,7 @@ SELECT DISTINCT 语句
 	SELECT DISTINCT column_name,column_name
 	FROM table_name;
 
+---
 	
 WHERE 子句
 ----------
@@ -41,6 +43,7 @@ WHERE 子句用于提取那些满足指定标准的记录。
 	FROM table_name
 	WHERE column_name operator value;
 
+---
 	
 AND & OR 运算符
 ---------------
@@ -63,6 +66,7 @@ AND & OR 运算符用于基于一个以上的条件对记录进行过滤。
 	WHERE Country='Germany'
 	AND (City='Berlin' OR City='München');
 
+---
 	
 ORDER BY 关键字
 ---------------
@@ -76,6 +80,7 @@ ORDER BY 关键字默认按照升序对记录进行排序。如果需要按照�
 	FROM table_name
 	ORDER BY column_name,column_name ASC|DESC;
 
+---
 	
 INSERT INTO 语句
 ----------------
@@ -87,13 +92,15 @@ INSERT INTO 语句可以有两种编写形式。
 
 - 第一种形式无需指定要插入数据的列名，只需提供被插入的值即可：
 
-	INSERT INTO table_name
-	VALUES (value1,value2,value3,...);
+		INSERT INTO table_name
+		VALUES (value1,value2,value3,...);
+	
 - 第二种形式需要指定列名及被插入的值：
 
-	INSERT INTO table_name (column1,column2,column3,...)
-	VALUES (value1,value2,value3,...);
+		INSERT INTO table_name (column1,column2,column3,...)
+		VALUES (value1,value2,value3,...);
 
+---
 	
 UPDATE 语句
 -----------
@@ -108,6 +115,7 @@ UPDATE 语句用于更新表中已存在的记录。
 <i class="fa fa-warning"></i>请注意 SQL UPDATE 语句中的 WHERE 子句！
 WHERE 子句规定哪条记录或者哪些记录需要更新。如果您省略了 WHERE 子句，所有的记录都将被更新！
 
+---
 
 DELETE 语句
 -----------
