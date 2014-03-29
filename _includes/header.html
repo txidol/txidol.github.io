@@ -21,12 +21,12 @@
                         <i class="fa fa-th-list"></i>&nbsp;分类
                     </a>
                 </li>
-				<li {% if page.navId == "base" %} class="active"{% endif %}>
+				<li {% if page.navId == "java_base" %} class="active"{% endif %}>
                     <a href="{{ site.ctx }}/blog/java/base">
                         <i class="fa fa-location-arrow"></i>&nbsp;Java初级码农
                     </a>
                 </li>				
-                <li>
+                <li {% if page.navId == "java_refactoring" %} class="active"{% endif %}>
                     <a href="{{ site.ctx }}/blog/java/refactoring">
                         <i class="fa fa-refresh fa-spin"></i>&nbsp;重构
                     </a>
