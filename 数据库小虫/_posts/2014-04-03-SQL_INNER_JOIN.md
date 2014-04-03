@@ -32,6 +32,7 @@ SQL INNER JOIN 语法
 	
 ### Mysql 
 也可以用上面的写法，等同下面
+
 	SELECT Customers.CustomerName, Orders.OrderID
 	FROM Customers , Orders
 	WHERE  Customers.CustomerID=Orders.CustomerID
