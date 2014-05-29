@@ -25,6 +25,11 @@
                     <a href="{{ site.ctx }}/blog/java/base">
                         <i class="fa fa-location-arrow"></i>&nbsp;Java初级码农
                     </a>
+                </li>
+				<li {% if page.navId == "java_improve" %} class="active"{% endif %}>
+                    <a href="{{ site.ctx }}/blog/java/improve">
+                        <i class="fa fa-location-arrow"></i>&nbsp;Java提高
+                    </a>
                 </li>				
                 <li {% if page.navId == "java_refactoring" %} class="active"{% endif %}>
                     <a href="{{ site.ctx }}/blog/java/refactoring">
@@ -41,12 +46,13 @@
                         <i class="fa fa-tags"></i>&nbsp;标签
                     </a>
                 </li>
+				<!--
                 <li{% if page.navId == "about" %} class="active"{% endif %}>
                     <a href="{{ site.ctx }}/about">
                         <i class="fa fa-user"></i>&nbsp;关于
                     </a>
                 </li>
-
+				-->
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
